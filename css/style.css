@@ -13,6 +13,7 @@ body {
     --light: #ffffff;
     --btn-blue: #0061ff;
     --color-purple:#621039;
+    --bg-dark: #000000;
 
     --block-green: #a2d39b;
     --block-purple:#61082b;
@@ -29,6 +30,10 @@ body {
     width: 70%;
     max-width: 1152px;
     margin: auto;
+}
+
+.container-large{
+    background-color: var(--bg-primary);
 }
 
 .container-small{
@@ -51,7 +56,7 @@ body {
     border: 1px solid black;
 }
 
-.debug .container-large{
+.debug .container-large .container{
     height: 30rem;
 }
 
@@ -86,6 +91,42 @@ body {
     height: 5rem;
     background-color: rgb(46, 130, 182);
 }
+
+.debug .team{
+    height: 10rem;
+    background-color: aquamarine;
+}
+
+.debug .teams-card{
+    height: 20rem;
+    background-color:violet;
+}
+
+.teams-card .cards-left, .cards-right{
+    border: 1px solid blue;
+}
+
+.debug .partner-card{
+    border: 1px solid red;
+}
+
+.debug .agency{
+    height: 5rem;
+}
+
+.debug .questions{
+    background-color: khaki;
+    height: 15rem;
+}
+
+.debug #app-footer{
+    height: 20rem;
+}
+
+.debug .section-footer{
+    height: 15rem;
+    border: 1px solid red;
+}
 /*Header*/
 
 #app-header{
@@ -101,10 +142,6 @@ body {
 }
 
 /*Main*/
-
-.container-large{
-    background-color: var(--bg-primary);
-}
 
 .row-plan{
     justify-content: space-between;
@@ -146,5 +183,31 @@ body {
     width: calc(100% / 3);
     min-height: 20rem;
     border: 1px solid black;
+}
 
+.teams-card{
+    margin-top: 2rem;
+}
+
+.teams-card .cards-left, .cards-center, .cards-right{
+    width: calc(100% / 3);
+}
+
+.teams-card .cards-left, .cards-right{
+    flex-wrap: wrap;
+}
+
+.partner-card{
+    width: calc(100% / 2);
+    height: calc(100% / 2);
+}
+
+/*Footer*/
+
+#app-footer{
+    background-color: var(--bg-dark);
+}
+
+.section-footer{
+    width: calc(100% / 5);
 }
