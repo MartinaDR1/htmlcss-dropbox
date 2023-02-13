@@ -270,6 +270,9 @@ hr{
     color: blue;
 }
 
+.info .fa-ul{
+    margin-left: 22px;
+}
 .bottom-center-col .btn-test{
     font-size: 12px;
     width: 100%;
