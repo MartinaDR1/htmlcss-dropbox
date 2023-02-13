@@ -45,8 +45,19 @@ body {
     display: flex;
 }
 
-/*debug*/
+ul{
+    list-style: none;
+}
 
+.btn{
+    color: var(--block-lighter);
+    background-color: var(--btn-blue);
+    border: none;
+    padding: 5px 10px;
+
+}
+/*debug*/
+/*
 .debug #app-header{
     height: 3rem;
     background-color: red;
@@ -55,7 +66,7 @@ body {
 .debug .menu-left, .menu-right{
     border: 1px solid black;
 }
-
+*/
 .debug .container-large .container{
     height: 30rem;
 }
@@ -127,11 +138,13 @@ body {
     height: 15rem;
     border: 1px solid red;
 }
+
 /*Header*/
 
 #app-header{
     display: flex;
-
+    vertical-align: baseline;
+    padding: 0.75rem;
     position: sticky;
     top: 0;
     left: 0;
@@ -139,6 +152,28 @@ body {
 
 .menu-left, .menu-right{
     width: 50%;
+}
+
+.menu-left .logo-dropbox{
+    height: 18px;
+    margin-right: 5px;
+}
+
+li, a{
+    display: inline;
+    text-decoration: none;
+    color: var(--bg-dark);
+
+    font-size: 12px;
+    margin: 0.3rem;
+}
+
+.menu-left{
+    justify-content: flex-start;
+}
+
+.menu-right{
+  justify-content: flex-end;
 }
 
 /*Main*/
