@@ -58,7 +58,14 @@ ul{
     background-color: var(--btn-blue);
     border: none;
     padding: 5px 10px;
+}
 
+hr{
+    color: lightgrey;
+}
+.half{
+    width: 20%;
+    margin: 1rem;
 }
 /*debug*/
 /*
@@ -74,9 +81,9 @@ ul{
 .debug .container-large .container{
     height: 30rem;
 }
-*/
+
 .debug .plan{
-    height: 5rem;
+    height: 8rem;
     background-color: blue;
 }
 
@@ -92,7 +99,7 @@ ul{
 .debug .enterprise .text-enterprise, .btn-enterprise{
     border: 1px solid red;
 } 
-
+*/
 .debug .partner{
     background-color: lightgreen;
     height: 25rem;
@@ -149,9 +156,12 @@ ul{
     display: flex;
     vertical-align: baseline;
     padding: 0.75rem;
+
+    background-color: white;
     position: sticky;
     top: 0;
     left: 0;
+    z-index: 1;
 }
 
 .menu-left, .menu-right{
@@ -163,7 +173,7 @@ ul{
     margin-right: 5px;
 }
 
-li, a{
+#app-header li, a{
     display: inline;
     text-decoration: none;
     color: var(--bg-dark);
@@ -181,6 +191,7 @@ li, a{
 }
 
 /*Main*/
+
 .banner h1{
    padding: 2rem 0;
    font-weight: 800;
@@ -211,27 +222,101 @@ li, a{
     margin-bottom: -3rem;
 }
 
+/*plan*/ 
+
+.container-small .plan{
+    margin-top: 4rem;
+    padding: 1rem 0;
+    line-height: 3rem;
+}
+
+.plan input{
+    margin-left: 1rem;
+}
+
 .row-plan{
     justify-content: space-between;
+    padding-bottom: 3rem;
 }
 
 .col-plan{
-    width: calc(100% / 12 * 3);
+    width: calc(100% / 3 - 20px);
     min-height: 30rem;
-    border: 1px solid black;
+    border: 1px solid lightgrey;
+
+    font-size: 12px;
+    line-height: 1.5rem;
 }
 
-.enterprise{
+.col-plan .top-col{
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.col-plan .top-center-col span{
+    color: grey;
+}
+
+.col-plan 
+.top-center-col, 
+.info, 
+.bottom-center-col,
+.bottom-col{
+    padding: 1rem;  
+}
+
+.center-col .bottom-center-col a{
+    text-decoration:underline;
+    color: blue;
+}
+
+.bottom-center-col .btn-test{
+    font-size: 12px;
     width: 100%;
+    padding: 0.5rem 0;
+    margin-bottom: 0.5rem;
+}
+
+.bottom-col ul i{
+    color: blue;
+}
+
+
+/*Enterprise*/ 
+.enterprise{
+    border: 1px solid lightgrey;
+}
+
+.enterprise .team-enterprise{
+    text-align: center;
+    padding: 0.5rem 0;
+}
+
+.enterprise-box{
+    padding: 1rem;
 }
 
 .enterprise .text-enterprise{
     width: 70%;
 }
 
-.enterprise .btn-enterprise{
-    width: 30%;
+.enterprise-box .text-top{
+    line-height: 2rem;
 }
+
+.enterprise-box .text-bottom{
+    color: grey;
+    font-size: 12px;
+    margin-top: 1rem;
+}
+
+.enterprise-box .btn-enterprise{
+    width: 30%;
+    text-align: end;
+    padding-top: 0.5rem;
+}
+
+/*Partner*/ 
 
 .partner .text-partner{
     width: 60%;
