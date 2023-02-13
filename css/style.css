@@ -82,6 +82,10 @@ body {
     border: 1px solid black;
 }
 
+.debug .operations .text-operations{
+    height: 5rem;
+    background-color: rgb(46, 130, 182);
+}
 /*Header*/
 
 #app-header{
@@ -130,4 +134,17 @@ body {
 
 .partner .img-partner{
     width: 40%;
+}
+
+.row-operations{
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 0 1rem 0;
+}
+
+.col-operations {
+    width: calc(100% / 3);
+    min-height: 20rem;
+    border: 1px solid black;
+
 }
