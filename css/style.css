@@ -25,6 +25,21 @@ body {
     --block-yellow:#ffd830;
 }
 
+.container{
+    width: 70%;
+    max-width: 1152px;
+    margin: auto;
+}
+
+.container-small{
+    width: 60%;
+    margin: auto;
+}
+
+.flex{
+    display: flex;
+}
+
 /*debug*/
 
 .debug #app-header{
@@ -33,6 +48,37 @@ body {
 }
 
 .debug .menu-left, .menu-right{
+    border: 1px solid black;
+}
+
+.debug .container-large{
+    height: 30rem;
+}
+
+.debug .plan{
+    height: 5rem;
+    background-color: blue;
+}
+
+.debug .row-plan{
+    background-color: pink;
+}
+
+.debug .enterprise{
+    background-color: lightcoral;
+    height: 10rem;
+}
+
+.debug .enterprise .text-enterprise, .btn-enterprise{
+    border: 1px solid red;
+} 
+
+.debug .partner{
+    background-color: lightgreen;
+    height: 25rem;
+}
+
+.debug .partner .text-partner, .img-partner{
     border: 1px solid black;
 }
 
@@ -48,4 +94,40 @@ body {
 
 .menu-left, .menu-right{
     width: 50%;
+}
+
+/*Main*/
+
+.container-large{
+    background-color: var(--bg-primary);
+}
+
+.row-plan{
+    justify-content: space-between;
+}
+
+.col-plan{
+    width: calc(100% / 12 * 3);
+    min-height: 30rem;
+    border: 1px solid black;
+}
+
+.enterprise{
+    width: 100%;
+}
+
+.enterprise .text-enterprise{
+    width: 70%;
+}
+
+.enterprise .btn-enterprise{
+    width: 30%;
+}
+
+.partner .text-partner{
+    width: 60%;
+}
+
+.partner .img-partner{
+    width: 40%;
 }
