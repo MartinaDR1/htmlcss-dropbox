@@ -123,7 +123,7 @@ hr{
     height: 10rem;
     background-color: aquamarine;
 }
-*/
+
 .debug .teams-card{
     height: 20rem;
     background-color:violet;
@@ -136,7 +136,7 @@ hr{
 .debug .partner-card{
     border: 1px solid red;
 }
-
+*/
 .debug .agency{
     height: 5rem;
 }
@@ -384,19 +384,79 @@ hr{
 
 .teams-card{
     margin-top: 2rem;
+    height: 20rem;
 }
 
-.teams-card .cards-left, .cards-center, .cards-right{
+.teams-card .cards-left, 
+.cards-center, 
+.cards-right{
     width: calc(100% / 3);
 }
 
-.teams-card .cards-left, .cards-right{
+.teams-card .cards-left, 
+.cards-right{
     flex-wrap: wrap;
 }
 
 .partner-card{
     width: calc(100% / 2);
     height: calc(100% / 2);
+    position: relative;
+}
+
+.partner-card img{
+    padding: 2rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.cards-left .green{
+    background-color: var(--block-green);
+    border: 10px solid #d1e9cd;
+}
+
+.cards-left .purple{
+    background-color: var(--block-purple);
+}
+
+.cards-left .lightblue{
+    background-color: var(--block-lightblue);
+}
+
+.cards-left .orange{
+    background-color: var(--block-orange);
+}
+
+.cards-right .red{
+    background-color: var(--block-red);
+}
+
+.cards-right .light{
+    background-color: var(--block-light);
+}
+
+.cards-right .blue{
+    background-color: var(--block-blue);
+}
+
+.cards-right .yellow{
+    background-color: var(--block-yellow);
+}
+
+.cards-center{
+    padding: 1rem 1rem;
+    background-color: var(--block-lighter);
+}
+.cards-center img{
+   width: 200px;
+}
+
+.cards-center p, span{
+    font-size: 12px;
+    margin-bottom: 2rem;
 }
 
 /*Footer*/
