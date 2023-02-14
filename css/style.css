@@ -108,12 +108,12 @@ hr{
 .debug .partner .text-partner, .img-partner{
     border: 1px solid black;
 }
-*/
+
 .debug .operations .text-operations{
     height: 5rem;
     background-color: rgb(46, 130, 182);
 }
-
+*/
 .debug .team{
     height: 10rem;
     background-color: aquamarine;
@@ -349,17 +349,27 @@ hr{
 
 /*Operations*/
 
+.operations .text-operations{
+    padding: 2rem 0;
+}
+
 .row-operations{
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 0 1rem 0;
+    margin-bottom: 1rem;
 }
 
 .col-operations {
     width: calc(100% / 3);
     min-height: 20rem;
-    border: 1px solid black;
+    padding: 0 1rem;
 }
+
+.text-col p{
+    margin: 1rem 0;
+    font-size: 12px;
+}
+/*Teams*/
 
 .teams-card{
     margin-top: 2rem;
