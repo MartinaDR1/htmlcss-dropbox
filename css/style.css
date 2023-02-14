@@ -72,88 +72,6 @@ hr{
     width: 20%;
     margin: 1rem;
 }
-/*debug*/
-/*
-.debug #app-header{
-    height: 3rem;
-    background-color: red;
-}
-
-.debug .menu-left, .menu-right{
-    border: 1px solid black;
-}
-
-.debug .container-large .container{
-    height: 30rem;
-}
-
-.debug .plan{
-    height: 8rem;
-    background-color: blue;
-}
-
-.debug .row-plan{
-    background-color: pink;
-}
-
-.debug .enterprise{
-    background-color: lightcoral;
-    height: 10rem;
-}
-
-.debug .enterprise .text-enterprise, .btn-enterprise{
-    border: 1px solid red;
-} 
-
-.debug .partner{
-    background-color: lightgreen;
-    height: 25rem;
-}
-
-.debug .partner .text-partner, .img-partner{
-    border: 1px solid black;
-}
-
-.debug .operations .text-operations{
-    height: 5rem;
-    background-color: rgb(46, 130, 182);
-}
-
-.debug .team{
-    height: 10rem;
-    background-color: aquamarine;
-}
-
-.debug .teams-card{
-    height: 20rem;
-    background-color:violet;
-}
-
-.teams-card .cards-left, .cards-right{
-    border: 1px solid blue;
-}
-
-.debug .partner-card{
-    border: 1px solid red;
-}
-
-.debug .agency{
-    height: 5rem;
-}
-
-.debug .questions{
-    background-color: khaki;
-    height: 15rem;
-}
-*/
-.debug #app-footer{
-    height: 20rem;
-}
-
-.debug .section-footer{
-    height: 15rem;
-    border: 1px solid red;
-}
 
 /*Header*/
 
@@ -166,7 +84,7 @@ hr{
     position: sticky;
     top: 0;
     left: 0;
-    z-index: 1;
+    z-index: 99;
 }
 
 .menu-left, .menu-right{
@@ -406,43 +324,44 @@ hr{
 
 .partner-card img{
     padding: 2rem;
-   
+    filter: invert(var(--value, 100%));
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 }
 
-.cards-left .green{
+.cards-left #green{
     background-color: var(--block-green);
     border: 10px solid #d1e9cd;
+   
 }
 
-.cards-left .purple{
+.cards-left #purple{
     background-color: var(--block-purple);
 }
 
-.cards-left .lightblue{
+.cards-left #lightblue{
     background-color: var(--block-lightblue);
 }
 
-.cards-left .orange{
+.cards-left #orange{
     background-color: var(--block-orange);
 }
 
-.cards-right .red{
+.cards-right #red{
     background-color: var(--block-red);
 }
 
-.cards-right .light{
+.cards-right #light{
     background-color: var(--block-light);
 }
 
-.cards-right .blue{
+.cards-right #blue{
     background-color: var(--block-blue);
 }
 
-.cards-right .yellow{
+.cards-right #yellow{
     background-color: var(--block-yellow);
 }
 
@@ -502,12 +421,41 @@ hr{
     padding-top: 2rem;
     padding-right: 2rem;
 }
+
 /*Footer*/
 
 #app-footer{
     background-color: var(--bg-dark);
+    color: white;
+
+    padding: 3rem 0;
 }
 
 .section-footer{
     width: calc(100% / 5);
+    padding-bottom: 2rem;
+}
+
+.section-footer > h4{
+    padding-bottom: 1rem;
+}
+
+.section-footer li a{
+    color: var(--block-lighter);
+    font-size: 10px;
+    line-height: 1rem;
+    margin-left: -1px;
+}
+
+.m-right-6{
+    margin-right: 6rem;
+}
+
+.bottom-footer{
+    color: lightgray;
+}
+
+.bottom-footer hr{
+    color: lightgray;
+    margin:1rem 0 2rem 0;
 }
