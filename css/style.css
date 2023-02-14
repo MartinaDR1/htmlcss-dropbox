@@ -99,7 +99,7 @@ hr{
 .debug .enterprise .text-enterprise, .btn-enterprise{
     border: 1px solid red;
 } 
-*/
+
 .debug .partner{
     background-color: lightgreen;
     height: 25rem;
@@ -108,7 +108,7 @@ hr{
 .debug .partner .text-partner, .img-partner{
     border: 1px solid black;
 }
-
+*/
 .debug .operations .text-operations{
     height: 5rem;
     background-color: rgb(46, 130, 182);
@@ -273,6 +273,7 @@ hr{
 .info .fa-ul{
     margin-left: 22px;
 }
+
 .bottom-center-col .btn-test{
     font-size: 12px;
     width: 100%;
@@ -286,6 +287,7 @@ hr{
 
 
 /*Enterprise*/ 
+
 .enterprise{
     border: 1px solid lightgrey;
 }
@@ -320,14 +322,32 @@ hr{
 }
 
 /*Partner*/ 
-
-.partner .text-partner{
-    width: 60%;
+.partner{
+    margin: 4rem 0;
 }
 
 .partner .img-partner{
-    width: 40%;
+    width: 60%;
 }
+
+.partner .text-partner{
+    width: 40%;
+    padding: 3rem 2rem;
+}
+
+.partner p{
+    margin: 1rem 0;
+    font-size: 14px;
+}
+
+.partner .btn-partner{
+    background-color: white;
+    color: grey;
+    border: 1px solid grey;
+    padding: 0.5rem 1rem;
+}
+
+/*Operations*/
 
 .row-operations{
     flex-wrap: wrap;
