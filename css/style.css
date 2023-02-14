@@ -136,7 +136,7 @@ hr{
 .debug .partner-card{
     border: 1px solid red;
 }
-*/
+
 .debug .agency{
     height: 5rem;
 }
@@ -145,7 +145,7 @@ hr{
     background-color: khaki;
     height: 15rem;
 }
-
+*/
 .debug #app-footer{
     height: 20rem;
 }
@@ -406,7 +406,7 @@ hr{
 
 .partner-card img{
     padding: 2rem;
-
+   
     position: absolute;
     top: 50%;
     left: 50%;
@@ -450,6 +450,7 @@ hr{
     padding: 1rem 1rem;
     background-color: var(--block-lighter);
 }
+
 .cards-center img{
    width: 200px;
 }
@@ -459,6 +460,48 @@ hr{
     margin-bottom: 2rem;
 }
 
+/*agency*/
+.box-agency{
+    padding: 5rem 0;
+}
+
+.agency-left{
+    width: 25%;
+}
+
+.agency-left > h3{
+    color: var(--block-purple);
+}
+
+.agency-right{
+    width: 75%;
+    text-align: end;
+}
+
+.btn-agency{
+    font-size: 12px;
+    padding: 0.2rem 1.5rem;
+}
+
+/*Questions */
+.questions{
+    padding: 4rem 0;
+    line-height: 4rem;
+}
+
+.questions > h2{
+    margin-bottom: 1rem;
+}
+
+.box-question{
+    justify-content: space-between;
+    margin: 0.7rem 0;
+}
+
+.box-question i{
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
 /*Footer*/
 
 #app-footer{
