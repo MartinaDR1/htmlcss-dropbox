@@ -53,6 +53,10 @@ ul{
     list-style: none;
 }
 
+.no-dec{
+    text-decoration: none;
+}
+
 .btn{
     color: var(--block-lighter);
     background-color: var(--btn-blue);
@@ -63,6 +67,7 @@ ul{
 hr{
     color: lightgrey;
 }
+
 .half{
     width: 20%;
     margin: 1rem;
@@ -113,12 +118,12 @@ hr{
     height: 5rem;
     background-color: rgb(46, 130, 182);
 }
-*/
+
 .debug .team{
     height: 10rem;
     background-color: aquamarine;
 }
-
+*/
 .debug .teams-card{
     height: 20rem;
     background-color:violet;
@@ -173,11 +178,9 @@ hr{
     margin-right: 5px;
 }
 
-#app-header li, a{
-    display: inline;
-    text-decoration: none;
+#app-header li, .no-dec{
     color: var(--bg-dark);
-
+    display: inline;
     font-size: 12px;
     margin: 0.3rem;
 }
@@ -263,11 +266,6 @@ hr{
 .bottom-center-col,
 .bottom-col{
     padding: 1rem;  
-}
-
-.center-col .bottom-center-col a{
-    text-decoration:underline;
-    color: blue;
 }
 
 .info .fa-ul{
@@ -363,13 +361,26 @@ hr{
     width: calc(100% / 3);
     min-height: 20rem;
     padding: 0 1rem;
+    margin-left: -1rem;
 }
 
 .text-col p{
     margin: 1rem 0;
     font-size: 12px;
 }
+
 /*Teams*/
+.team{
+    margin-top: 5rem;
+}
+
+.team > h3{
+    padding-bottom: 2rem;
+}
+
+.team a{
+    font-size: 12px;
+}
 
 .teams-card{
     margin-top: 2rem;
