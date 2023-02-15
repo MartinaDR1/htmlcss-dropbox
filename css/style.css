@@ -126,6 +126,46 @@ hr{
 #app-header li:hover{
     border-bottom: 1px solid black;
 }
+
+#why-dropbox{
+    position: relative;
+}
+
+.dropdown{
+    display: none;
+    position: absolute;
+    background-color: var(--block-lighter);
+}
+
+.item a {
+    min-width: 150px;
+    padding: 12px 20px;
+    display: block;
+}
+
+#why-dropbox:hover .dropdown{
+    display: block;
+}
+
+#contacts{
+    position: relative;
+}
+
+.content {
+    display: none;
+    position: absolute;
+    left: 20px;
+    background-color: var(--block-lighter);
+}
+
+.content a {
+    padding: 12px 16px;
+    display: block;
+}
+
+#contacts:hover .dropdown{
+    display: block;
+}
 /*#endregion Header*/
 
 /*Main*/
