@@ -49,6 +49,10 @@ img{
     max-width: 100%;
 }
 
+.pd-1{
+    padding: 1rem;
+}
+
 ul{
     list-style: none;
 }
@@ -64,6 +68,14 @@ ul{
     padding: 5px 10px;
 }
 
+.btn:hover{
+    background-color: var(--block-lightblue);
+}
+
+.btn a{
+    color: var(--block-lighter); 
+}
+
 hr{
     color: lightgrey;
 }
@@ -73,7 +85,7 @@ hr{
     margin: 1rem;
 }
 
-/*Header*/
+/*#region Header*/
 
 #app-header{
     display: flex;
@@ -111,8 +123,14 @@ hr{
   justify-content: flex-end;
 }
 
+#app-header li:hover{
+    border-bottom: 1px solid black;
+}
+/*#endregion Header*/
+
 /*Main*/
 
+/*#region banner*/
 .banner h1{
    padding: 2rem 0;
    font-weight: 800;
@@ -142,8 +160,10 @@ hr{
     margin-left: -1.5rem;
     margin-bottom: -3rem;
 }
+/*#endregion banner*/
 
-/*plan*/ 
+
+/*#region plan*/ 
 
 .container-small .plan{
     margin-top: 4rem;
@@ -178,14 +198,6 @@ hr{
     color: grey;
 }
 
-.col-plan 
-.top-center-col, 
-.info, 
-.bottom-center-col,
-.bottom-col{
-    padding: 1rem;  
-}
-
 .info .fa-ul{
     margin-left: 22px;
 }
@@ -200,9 +212,10 @@ hr{
 .bottom-col ul i{
     color: blue;
 }
+/*#endregion plan*/ 
 
 
-/*Enterprise*/ 
+/*#region Enterprise*/ 
 
 .enterprise{
     border: 1px solid lightgrey;
@@ -211,10 +224,6 @@ hr{
 .enterprise .team-enterprise{
     text-align: center;
     padding: 0.5rem 0;
-}
-
-.enterprise-box{
-    padding: 1rem;
 }
 
 .enterprise .text-enterprise{
@@ -236,8 +245,11 @@ hr{
     text-align: end;
     padding-top: 0.5rem;
 }
+/*#endregion plan*/ 
 
-/*Partner*/ 
+
+/*#region Partner*/ 
+
 .partner{
     margin: 4rem 0;
 }
@@ -256,14 +268,21 @@ hr{
     font-size: 14px;
 }
 
-.partner .btn-partner{
+.text-partner .btn-partner a{
     background-color: white;
     color: grey;
     border: 1px solid grey;
     padding: 0.5rem 1rem;
+    margin: -2px;
 }
 
-/*Operations*/
+.btn-partner:hover a{
+    font-size: 16px;
+}
+/*#endregion plan*/ 
+
+
+/*#region Operations*/
 
 .operations .text-operations{
     padding: 2rem 0;
@@ -286,8 +305,10 @@ hr{
     margin: 1rem 0;
     font-size: 12px;
 }
+/*#endregion plan*/ 
 
-/*Teams*/
+
+/*#region Teams*/
 .team{
     margin-top: 5rem;
 }
@@ -378,8 +399,10 @@ hr{
     font-size: 12px;
     margin-bottom: 2rem;
 }
+/*#endregion plan*/ 
 
-/*agency*/
+
+/*#region agency*/
 .box-agency{
     padding: 5rem 0;
 }
@@ -401,8 +424,9 @@ hr{
     font-size: 12px;
     padding: 0.2rem 1.5rem;
 }
+/*#endregion plan*/ 
 
-/*Questions */
+/*#region Questions */
 .questions{
     padding: 4rem 0;
     line-height: 4rem;
@@ -412,17 +436,32 @@ hr{
     margin-bottom: 1rem;
 }
 
-.box-question{
+.box-question,
+.change{
     justify-content: space-between;
     margin: 0.7rem 0;
 }
 
-.box-question i{
+.box-question i,
+.change i{
     padding-top: 2rem;
     padding-right: 2rem;
 }
 
-/*Footer*/
+.box-aswers{
+    display: none;
+}
+
+.box:hover .box-question{
+    display: none;
+}
+.box:hover .box-aswers{
+    display: block;
+}
+/*#endregion plan*/ 
+
+
+/*#region Footer*/
 
 #app-footer{
     background-color: var(--bg-dark);
@@ -459,3 +498,4 @@ hr{
     color: lightgray;
     margin:1rem 0 2rem 0;
 }
+/*#endregion plan*/ 
